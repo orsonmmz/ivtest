@@ -149,6 +149,9 @@ pr2428890c		normal			ivltests
 # $ivl_darray_method$to_vec & $ivl_darray_method$from_vec
 sv_cast_darray		normal,-g2005-sv	ivltests
 
+# Time conversion functions: $ivlh_time_to_def & $ivlh_time_from_def
+ivlh_time		normal,-g2005-sv	ivltests gold=ivlh_time.gold
+
 # $ivl_to_unsigned
 br978			normal			ivltests
 br_ml20150424		normal			ivltests
