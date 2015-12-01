@@ -234,7 +234,7 @@ sub execute_regression {
 
     } continue {
         if ($tname ne "") {
-            system("rm -f ./vsim && rm -rf ivl_vhdl_work") and
+            system("rm -f ./vsim && rm -rf ivl_vhdl_work && rm -f *.tmp") and
                 die "Error: failed to remove temporary file.\n";
         }
     }
