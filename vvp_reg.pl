@@ -234,7 +234,7 @@ sub execute_regression {
 
     } continue {
         if ($tname ne "") {
-            system("rm -f ./vsim && rm -rf ivl_vhdl_work && rm -f *.tmp") and
+            system("rm -f ./vsim && rm -rf ivl_vhdl_work") and
                 die "Error: failed to remove temporary file.\n";
         }
     }
@@ -242,4 +242,7 @@ sub execute_regression {
     &print_rpt("=" x 76 . "\n");
     &print_rpt("Test results:\n  Total=$total, Passed=$passed, Failed=$failed,".
                " Not Implemented=$not_impl, Expected Fail=$expected_fail\n");
+
+    # Remove remaining temporary files
+    system("rm -f *.tmp");
 }
