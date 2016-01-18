@@ -133,7 +133,7 @@ sub execute_regression {
         $cmd .= " -s $testmod{$tname}" if ($testmod{$tname} ne "");
         $cmd .= " -t null" if ($testtype{$tname} eq "CN");
         $cmd .= " ./$srcpath{$tname}/$tname.v > log/$tname.log 2>&1";
-#        print "$cmd\n";
+        print "$cmd\n";
         if (system("$cmd")) {
             if ($testtype{$tname} eq "CE") {
                 # Check if the system command core dumped!
