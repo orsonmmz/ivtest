@@ -2087,8 +2087,9 @@ test_mos_strength_reduction: Passed.
           vhdl_const_record: Passed.
            vhdl_const_array: Passed.
           vhdl_delay_assign: Passed.
-                 vhdl_expr1: Passed.
             vhdl_elab_range: Passed.
+             vhdl_eval_cond: Passed.
+                 vhdl_expr1: Passed.
           vhdl_generic_eval: Passed.
              vhdl_fa4_test1: Passed.
              vhdl_fa4_test2: Passed.
@@ -2122,6 +2123,7 @@ test_mos_strength_reduction: Passed.
               vhdl_or23_bit: Passed.
                vhdl_org_bit: Passed.
           vhdl_org_stdlogic: Passed.
+               vhdl_pow_rem: Passed.
           vhdl_prefix_array: Passed.
              vhdl_procedure: Passed.
          vhdl_process_scope: Passed.
@@ -2132,6 +2134,7 @@ test_mos_strength_reduction: Passed.
            vhdl_record_elab: Passed.
                 vhdl_reduce: Passed.
                 vhdl_report: Passed.
+                vhdl_resize: Passed.
                   vhdl_rtoi: Passed.
              vhdl_sa1_test1: Passed.
              vhdl_sa1_test2: Passed.
@@ -2171,6 +2174,7 @@ test_mos_strength_reduction: Passed.
        vhdl_udiv23_stdlogic: Passed.
             vhdl_umul23_bit: Passed.
        vhdl_umul23_stdlogic: Passed.
+           vhdl_unary_minus: Passed.
              vhdl_unbounded: Passed.
         vhdl_unbounded_func: Passed.
             vhdl_usub23_bit: Passed.
@@ -2263,4 +2267,4 @@ test_mos_strength_reduction: Passed.
                 ufuncsynth1: Passed.
 ============================================================================
 Test results:
-  Total=2261, Passed=2254, Failed=7, Not Implemented=0, Expected Fail=0
+  Total=2265, Passed=2258, Failed=7, Not Implemented=0, Expected Fail=0
